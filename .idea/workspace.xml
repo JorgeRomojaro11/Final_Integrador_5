@@ -4,20 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b4ea223-bf25-490d-9127-5a84b05524ef" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="7b4ea223-bf25-490d-9127-5a84b05524ef" name="Changes" comment="Main">
+      <change afterPath="$PROJECT_DIR$/src/main/java/InformacionCientifica/OrganizadorDeDocumentos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/VentanaPrincipal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2f8JBtjRO2szqbVJnHH4ZW4AQde" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -26,14 +36,39 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Main.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
+      <module name="Caso_Final_Integrador_5" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -49,11 +84,61 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1713176643177</updated>
-      <workItem from="1713176644662" duration="4000" />
+      <workItem from="1713176644662" duration="257000" />
+      <workItem from="1713176925921" duration="3704000" />
     </task>
+    <task id="LOCAL-00001" summary="Analisis">
+      <option name="closed" value="true" />
+      <created>1713180635086</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1713180635086</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Buscador">
+      <option name="closed" value="true" />
+      <created>1713180651593</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1713180651593</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Gestor">
+      <option name="closed" value="true" />
+      <created>1713180658828</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1713180658828</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Herramientas">
+      <option name="closed" value="true" />
+      <created>1713180667459</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1713180667459</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Main">
+      <option name="closed" value="true" />
+      <created>1713180677286</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1713180677286</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Analisis" />
+    <MESSAGE value="Buscador" />
+    <MESSAGE value="Gestor" />
+    <MESSAGE value="Herramientas" />
+    <MESSAGE value="Main" />
+    <option name="LAST_COMMIT_MESSAGE" value="Main" />
   </component>
 </project>
