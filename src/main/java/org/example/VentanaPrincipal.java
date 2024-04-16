@@ -19,7 +19,6 @@ import java.util.Date;
 import java.util.stream.Collectors;
 
 public class VentanaPrincipal extends JFrame {
-    private Integer[] array = {3, 4, 1, 5, 2}; // Array de elementos para ordenar
 
     public VentanaPrincipal() {
         setTitle("Ventana Principal");
@@ -45,11 +44,6 @@ public class VentanaPrincipal extends JFrame {
                         dialogo.add(campos[i]);
                     }
 
-                    JTextArea resultado = new JTextArea();
-                    resultado.setEditable(false);
-                    dialogo.add(new JLabel("Números ordenados:"));
-                    dialogo.add(resultado);
-
                     JButton enviar = new JButton("Enviar");
                     enviar.addActionListener(new ActionListener() {
                         @Override
@@ -58,9 +52,21 @@ public class VentanaPrincipal extends JFrame {
                             for (int i = 0; i < 6; i++) {
                                 numeros[i] = Integer.parseInt(campos[i].getText());
                             }
-                            Quicksort quicksort = new Quicksort();
-                            quicksort.sort(numeros);
-                            resultado.setText(Arrays.toString(numeros));
+
+                            // Crear una nueva ventana para mostrar los pasos
+                            JDialog dialogoPasos = new JDialog(VentanaPrincipal.this, "Pasos del algoritmo Quicksort", true);
+                            dialogoPasos.setLayout(new BorderLayout());
+
+                            JTextArea resultado = new JTextArea();
+                            resultado.setEditable(false);
+                            dialogoPasos.add(new JScrollPane(resultado), BorderLayout.CENTER);
+
+                            dialogoPasos.setSize(300, 200);
+                            dialogoPasos.setLocationRelativeTo(null);
+
+                            quicksortPasoAPaso(numeros, 0, numeros.length - 1, resultado);
+
+                            dialogoPasos.setVisible(true);
                         }
                     });
                     dialogo.add(enviar);
@@ -196,7 +202,6 @@ public class VentanaPrincipal extends JFrame {
                     }
                 });
                 dialogoOperaciones.add(botonMaximo);
-
                 dialogoOperaciones.pack();
                 dialogoOperaciones.setVisible(true);
             }
@@ -383,10 +388,51 @@ public class VentanaPrincipal extends JFrame {
         });
         panel.add(botonGestionInformacion);
     }
+    public void mostrarArray(Integer[] array, JTextArea textArea) {
+        textArea.append(Arrays.toString(array) + "\n");
+    }
+    public void quicksortPasoAPaso(Integer[] array, int inicio, int fin, JTextArea textArea) {
+        if (inicio < fin) {
+            int pivote = partition(array, inicio, fin, textArea);
+            quicksortPasoAPaso(array, inicio, pivote - 1, textArea);
+            quicksortPasoAPaso(array, pivote + 1, fin, textArea);
+        }
+    }
+    public int partition(Integer[] array, int inicio, int fin, JTextArea textArea) {
+        int pivote = array[fin];
+        int i = inicio - 1;
+        for (int j = inicio; j < fin; j++) {
+            if (array[j] < pivote) {
+                i++;
+                int temp = array[i];
+                array[i] = array[j];
+                array[j] = temp;
+                mostrarArray(array, textArea); // Mostrar el estado del array después de cada intercambio
+            }
+        }
+        int temp = array[i + 1];
+        array[i + 1] = array[fin];
+        array[fin] = temp;
+        mostrarArray(array, textArea); // Mostrar el estado del array después de mover el pivote
+        return i + 1;
+    }
+    public void mostrarArray(Integer[] array) {
+        JTextArea textArea = new JTextArea();
+        textArea.setEditable(false);
+        textArea.setText(Arrays.toString(array));
+
+        JDialog dialog = new JDialog();
+        dialog.setTitle("Estado del array");
+        dialog.setModal(true);
+        dialog.getContentPane().add(new JScrollPane(textArea), BorderLayout.CENTER);
+        dialog.setSize(300, 200);
+        dialog.setLocationRelativeTo(null);
+        dialog.setVisible(true);
+    }
 
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> {
             new VentanaPrincipal().setVisible(true);
         });
     }
-}
+};
