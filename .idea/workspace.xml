@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b4ea223-bf25-490d-9127-5a84b05524ef" name="Changes" comment="Workspace">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/thealgorithms/sorts/AnimatedQuicksort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/thealgorithms/sorts/ArrayVisualizer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/SortingVisualizer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Numeros/HerramientasDeAnalisisNumerico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Numeros/HerramientasDeAnalisisNumerico.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/thealgorithms/sorts/AnimatedQuicksort.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/thealgorithms/sorts/ArrayVisualizer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/SortingVisualizer.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/VentanaPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/VentanaPrincipal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,6 +40,7 @@
   "keyToString": {
     "Application.Main.executor": "Run",
     "Application.SortingVisualizer.executor": "Run",
+    "Application.VentanaPrincipal.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -52,7 +54,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.SortingVisualizer">
+  <component name="RunManager" selected="Application.VentanaPrincipal">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="Caso_Final_Integrador_5" />
@@ -79,10 +81,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="VentanaPrincipal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.VentanaPrincipal" />
+      <module name="Caso_Final_Integrador_5" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SortingVisualizer" />
+        <item itemvalue="Application.VentanaPrincipal" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.SortingVisualizer" />
       </list>
     </recent_temporary>
   </component>
@@ -104,6 +120,7 @@
       <workItem from="1713176644662" duration="257000" />
       <workItem from="1713176925921" duration="3922000" />
       <workItem from="1713251157661" duration="5418000" />
+      <workItem from="1713256744452" duration="5309000" />
     </task>
     <task id="LOCAL-00001" summary="Analisis">
       <option name="closed" value="true" />

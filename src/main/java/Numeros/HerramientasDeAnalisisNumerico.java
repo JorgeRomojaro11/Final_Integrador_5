@@ -2,22 +2,6 @@ package Numeros;
 
 public class HerramientasDeAnalisisNumerico {
 
-    public static int sumaNumerosNaturales(int n) {
-        if (n <= 0) {
-            return 0;
-        } else {
-            return n + sumaNumerosNaturales(n - 1);
-        }
-    }
-    public static void listaNumerosEnRango(int inicio, int fin) {
-        if (inicio > fin) {
-            return;
-        } else {
-            System.out.println(inicio);
-            listaNumerosEnRango(inicio + 1, fin);
-        }
-    }
-
     public static int potencia(int base, int exponente) {
         int resultado = 1;
         for (int i = 0; i < exponente; i++) {
@@ -34,5 +18,12 @@ public class HerramientasDeAnalisisNumerico {
             }
         }
         return maximo;
+    }
+    public static int sumaNumeros(int[] numeros) {
+        int suma = 0;
+        for (int numero : numeros) {
+            suma += numero;
+        }
+        return suma;
     }
 }
