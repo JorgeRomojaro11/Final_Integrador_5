@@ -1,37 +1,35 @@
 package InformacionCientifica;
 
-import java.io.*;
-import java.util.*;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class BuscadorEnTextos {
-    public static boolean buscarPalabraLineal(String rutaArchivo, String palabra) throws IOException {
-        BufferedReader reader = new BufferedReader(new FileReader(rutaArchivo));
-        String linea;
+    public static class ResultadoBusqueda {
+        public int conteo;
+        public List<Integer> lineas;
 
-        while ((linea = reader.readLine()) != null) {
-            if (linea.contains(palabra)) {
-                return true;
-            }
+        public ResultadoBusqueda() {
+            this.conteo = 0;
+            this.lineas = new ArrayList<>();
         }
-
-        reader.close();
-        return false;
     }
 
-    public static boolean buscarPalabraBinaria(String rutaArchivo, String palabra) throws IOException {
-        BufferedReader reader = new BufferedReader(new FileReader(rutaArchivo));
-        ArrayList<String> lineas = new ArrayList<>();
-        String linea;
-
-        while ((linea = reader.readLine()) != null) {
-            lineas.add(linea);
+    public static ResultadoBusqueda buscarPalabraLineal(String rutaArchivo, String palabra) throws IOException {
+        ResultadoBusqueda resultado = new ResultadoBusqueda();
+        try (BufferedReader br = new BufferedReader(new FileReader(rutaArchivo))) {
+            String linea;
+            int numeroLinea = 1;
+            while ((linea = br.readLine()) != null) {
+                if (linea.contains(palabra)) {
+                    resultado.conteo++;
+                    resultado.lineas.add(numeroLinea);
+                }
+                numeroLinea++;
+            }
         }
-
-        Collections.sort(lineas);
-
-        int indice = Collections.binarySearch(lineas, palabra);
-        reader.close();
-
-        return indice >= 0;
+        return resultado;
     }
 }
