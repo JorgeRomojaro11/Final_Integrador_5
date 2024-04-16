@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7b4ea223-bf25-490d-9127-5a84b05524ef" name="Changes" comment="pom">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/thealgorithms/sorts/Quicksort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/thealgorithms/sorts/SortAlgorithms.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/thealgorithms/sorts/SortUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/VentanaDeTexto.java" afterDir="false" />
+    <list default="true" id="7b4ea223-bf25-490d-9127-5a84b05524ef" name="Changes" comment="Workspace">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/thealgorithms/sorts/AnimatedQuicksort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/thealgorithms/sorts/ArrayVisualizer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/SortingVisualizer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/InformacionCientifica/BuscadorEnTextos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/InformacionCientifica/BuscadorEnTextos.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/VentanaPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/VentanaPrincipal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,22 +35,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Application.SortingVisualizer.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager">
+}]]></component>
+  <component name="RunManager" selected="Application.SortingVisualizer">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="Caso_Final_Integrador_5" />
@@ -66,8 +66,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SortingVisualizer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.SortingVisualizer" />
+      <module name="Caso_Final_Integrador_5" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SortingVisualizer" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
@@ -89,7 +103,7 @@
       <updated>1713176643177</updated>
       <workItem from="1713176644662" duration="257000" />
       <workItem from="1713176925921" duration="3922000" />
-      <workItem from="1713251157661" duration="2682000" />
+      <workItem from="1713251157661" duration="5418000" />
     </task>
     <task id="LOCAL-00001" summary="Analisis">
       <option name="closed" value="true" />
@@ -147,7 +161,63 @@
       <option name="project" value="LOCAL" />
       <updated>1713180700337</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="BuscadorEnTextos">
+      <option name="closed" value="true" />
+      <created>1713254149559</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1713254149559</updated>
+    </task>
+    <task id="LOCAL-00009" summary="quicksort">
+      <option name="closed" value="true" />
+      <created>1713254156830</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1713254156830</updated>
+    </task>
+    <task id="LOCAL-00010" summary="SortAlgorithms">
+      <option name="closed" value="true" />
+      <created>1713254165597</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1713254165597</updated>
+    </task>
+    <task id="LOCAL-00011" summary="SortUtils">
+      <option name="closed" value="true" />
+      <created>1713254171346</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1713254171346</updated>
+    </task>
+    <task id="LOCAL-00012" summary="VentanaDeTexto">
+      <option name="closed" value="true" />
+      <created>1713254179320</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1713254179320</updated>
+    </task>
+    <task id="LOCAL-00013" summary="VentanaPrincipal">
+      <option name="closed" value="true" />
+      <created>1713254184873</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1713254184873</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Workspace">
+      <option name="closed" value="true" />
+      <created>1713254191541</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1713254191541</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,6 +231,13 @@
     <MESSAGE value="Main" />
     <MESSAGE value="Organizacion" />
     <MESSAGE value="pom" />
-    <option name="LAST_COMMIT_MESSAGE" value="pom" />
+    <MESSAGE value="BuscadorEnTextos" />
+    <MESSAGE value="quicksort" />
+    <MESSAGE value="SortAlgorithms" />
+    <MESSAGE value="SortUtils" />
+    <MESSAGE value="VentanaDeTexto" />
+    <MESSAGE value="VentanaPrincipal" />
+    <MESSAGE value="Workspace" />
+    <option name="LAST_COMMIT_MESSAGE" value="Workspace" />
   </component>
 </project>
