@@ -8,12 +8,15 @@ import Numeros.HerramientasDeAnalisisNumerico;
 import ADN.AnalisisGenomico;
 import InformacionCientifica.OrganizadorDeDocumentos;
 import InformacionCientifica.BuscadorEnTextos;
+import com.thealgorithms.sorts.Quicksort;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
 public class VentanaPrincipal extends JFrame {
+    private Integer[] array = {3, 4, 1, 5, 2}; // Array de elementos para ordenar
+
     public VentanaPrincipal() {
         setTitle("Ventana Principal");
         setSize(300, 200);
@@ -67,13 +70,8 @@ public class VentanaPrincipal extends JFrame {
                             File selectedFile = fileChooser.getSelectedFile();
                             String contenido = new String(Files.readAllBytes(Paths.get(selectedFile.getAbsolutePath())));
 
-                            JTextArea textArea = new JTextArea(contenido);
-                            JScrollPane scrollPane = new JScrollPane(textArea);
-                            JOptionPane.showMessageDialog(null, scrollPane);
-
-                            String palabra = JOptionPane.showInputDialog("Introduce la palabra a buscar:");
-                            boolean encontradoLineal = BuscadorEnTextos.buscarPalabraLineal(selectedFile.getAbsolutePath(), palabra);
-                            JOptionPane.showMessageDialog(null, "La palabra fue encontrada de forma lineal: " + encontradoLineal);
+                            VentanaDeTexto ventanaDeTexto = new VentanaDeTexto(selectedFile, contenido);
+                            ventanaDeTexto.setVisible(true);
                         }
                     } catch (IOException ex) {
                         JOptionPane.showMessageDialog(null, "Ha ocurrido un error: " + ex.getMessage());
@@ -82,5 +80,20 @@ public class VentanaPrincipal extends JFrame {
             }
         });
         panel.add(botonInformacionCientifica);
+
+        JButton botonOrdenar = new JButton("Ordenar");
+        botonOrdenar.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                Quicksort quickSort = new Quicksort();
+                array = quickSort.sort(array);
+
+                // Muestra los resultados
+                for (int i : array) {
+                    System.out.print(i + " ");
+                }
+            }
+        });
+        panel.add(botonOrdenar);
     }
 }
